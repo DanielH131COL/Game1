@@ -53,7 +53,8 @@ public class PanelJuego extends JPanel implements ActionListener, MouseListener 
 
         posicionarBotonSalir();
 
-        timer = new Timer(Configuracion.velocidad, this);
+        timer = new Timer(300, this);
+        timer.setRepeats(false);
         timer.start();
         tiempoInicio = System.currentTimeMillis();
     }
